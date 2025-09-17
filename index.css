@@ -1,16 +1,34 @@
-body, {
-display: flex;
+body {
 background-color:#fffefe;
 font-family: Archivo;
 text-align: center;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
+.container {
+
+  display: flex;
+  justify-items: space-between;
+  margin: 2vw;
+  padding: ;
+  font-size: 20px;
+}
+
+.card {
+  margin: 2vw;
   padding: 0;
+  box-shadow:#29232f;
   font-size: 10px;
-  color:#29232f;
-
 }
 
+img {
+  width: 20vw;
+}
+
+h1, {
+  text-align: center;
+  color: #00a6a0; 
+  font-size: 30px;
+}
