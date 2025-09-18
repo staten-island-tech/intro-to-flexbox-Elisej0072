@@ -8,12 +8,14 @@ box-sizing: border-box;
 }
 
 .container {
-
   display: flex;
   justify-items: space-between;
   margin: 2vw;
-  padding: ;
+  padding: 0;
   font-size: 20px;
+  flex-direction: column:
+   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card {
@@ -21,14 +23,40 @@ box-sizing: border-box;
   padding: 0;
   box-shadow:#29232f;
   font-size: 10px;
+  border: solid #00bcd9 7px;
+  border-radius: 10px;
 }
 
 img {
-  width: 20vw;
+  width: 18vw;
 }
 
-h1, {
+button{
+  width: 85px;
+  padding: 5px;
+}
+
+h1 {
   text-align: center;
-  color: #00a6a0; 
-  font-size: 30px;
+  font-size: 55px;
+  margin-top: 5vw;
+}
+
+h2 {
+  text-align: center;
+  font-size: 25px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px){
+  .card{
+    width: 100%;
+  }
+  .container{
+    flex-direction: column;
+  }
 }
