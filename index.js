@@ -1,6 +1,6 @@
 const items = [
     {"name": "Gummy Sharks",
-     "image": "https://theheadnut.com/cdn/shop/products/gummi_sharks.gif?v=1533923761",
+     "image": "https://theheadnut.com/cdn/shop/items/gummi_sharks.gif?v=1533923761",
      "alt": "gummy shark",
      "price": "10.99",
      "instock": true
@@ -21,7 +21,7 @@ const items = [
     },
 
     {"name": "Sour Gummy Sharks",
-     "image": "https://cdn11.bigcommerce.com/s-jzmamplsrc/images/stencil/590x590/products/4044/7518/gummy-sour-sharks-candy__08935.1746997182.jpg?c=1",
+     "image": "https://cdn11.bigcommerce.com/s-jzmamplsrc/images/stencil/590x590/items/4044/7518/gummy-sour-sharks-candy__08935.1746997182.jpg?c=1",
      "alt": "gummy shark sour",
      "price": "15.99",
      "instock": true
@@ -42,7 +42,7 @@ const items = [
     },
 
     {"name": "Melted? Gummy Sharks",
-     "image": "https://cdn11.bigcommerce.com/s-riqk6cih6h/images/stencil/1280x1280/products/215/1410/50193_1__29479.1668014904.png?c=1",
+     "image": "https://cdn11.bigcommerce.com/s-riqk6cih6h/images/stencil/1280x1280/items/215/1410/50193_1__29479.1668014904.png?c=1",
      "alt": "gummy shark melt",
      "price": "8.99",
      "instock": true
@@ -123,7 +123,7 @@ const items = [
     },
 
     {"name": "Mini Gummy Sharks",
-     "image": "https://cdnimg.webstaurantstore.com/images/products/large/611302/2190204.jpg",
+     "image": "https://cdnimg.webstaurantstore.com/images/items/large/611302/2190204.jpg",
      "alt": "Mini Gummy Sharks ",
      "price": "6.99",
      "instock": true
@@ -137,7 +137,7 @@ const items = [
     },
 
     {"name": "Mini Gummy Sharks",
-     "image": "https://cdnimg.webstaurantstore.com/images/products/large/611302/2190204.jpg",
+     "image": "https://cdnimg.webstaurantstore.com/images/items/large/611302/2190204.jpg",
      "alt": "Mini Gummy Sharks ",
      "price": "6.99",
      "instock": true
@@ -145,12 +145,36 @@ const items = [
 ];
 
 function inject(item) {
-  let name ="jfahhdgbjhvb";
 const container = document.querySelector(".container"); 
-container.insertAdjacentHTML("afterbegin", `<h1>${name}</h1>`);
+/* query the container using adjacent html push card into container */
+
+const html = `<div class ="card">
+  <h2 class="card__heading"${item.name}</h2><img.src="${item.image}"><div class="card_bottom>
+  <h3> $${item.price} </h3>
+  <button class="buy">BUY</button>
+</div>`
+container.insertAdjacentHTML('afterbegin', html);
 
 }
 
-inject(products[0])
-productas.forEach((product) => inject(item))
-/* query the container using adjacent html push card into container */
+inject(items[0])
+items.forEach((item) => inject(item))
+
+
+
+function addToCart() {
+  const buttons = document.querySelectorAll("button");
+  //create array if we need more than forEach
+  const btnArray = Array.from(buttons);
+  btnArray.forEach((btn) => btn.addEventListener("click", function (event) {
+    comsole.log(event.target.textContent);
+    console.log(event.target.closest("display-card"));
+  
+  }))
+
+  console.log(buttons);
+
+  //find the item in the array
+  //take that object and push into cart
+}
+addToCart();
