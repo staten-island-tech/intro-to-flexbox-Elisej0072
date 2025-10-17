@@ -1,15 +1,107 @@
 const items = [
-    {"name": "Gummy Sharks",
-     "image":"https://theheadnut.com/cdn/shop/products/gummi_sharks.gif?v=1533923761images/gummyshark.png",
-     "alt": "gummy shark",
-     "price": 10.99,
+  
+    {"name": "Sour Assorted Gummy Sharks",
+     "image": "https://sweetzandmore.com/cdn/shop/files/rn-image_picker_lib_temp_07c96c72-9e7e-44fa-823a-353973a7999b.jpg?crop=center&height=1200&v=1743362603&width=1200",
+     "alt": "Sour Assorted Gummy Sharks ",
+     "price": 9.99,
      "instock": true
     },
 
-    {"name": "Assorted Gummy Sharks",
-     "image": "https://th.bing.com/th/id/OPHS.2OrKdVuWzRJ4Dg474C474?w=592&h=550&o=5&pid=21.1",
-     "alt": "assorted gm",
+    {"name": "Marshmellow Gummy Shark",
+     "image": "https://m.media-amazon.com/images/I/61+Y+CnemoL._SL1280_.jpg",
+     "alt": "Gummy Shark Marsh",
+     "price": 8.99,
+     "instock": true
+    },
+
+    {"name": "Mini Gummy Sharks",
+     "image": "https://cdnimg.webstaurantstore.com/images/products/large/611302/2190204.jpg",
+     "alt": "Mini Gummy Sharks ",
+     "price": 6.99,
+     "instock": true
+    },    
+    
+    {"name": "Gummy Frog",
+     "image": "https://i.etsystatic.com/20314700/r/il/ea189b/5410146293/il_1080xN.5410146293_l25u.jpg",
+     "alt": "Gummy Frog",
+     "price": 7.99,
+     "instock": true
+    },
+      
+    {"name": "Life Guard Ring Gummy",
+     "image": "https://marketingresources.albaneseconfectionery.com/wp-content/uploads/2021/05/50135_1-1250x1250.png",
+     "alt": "life guard ring",
+     "price": 10.99,
+     "instock": true
+    },
+    
+    {"name": "Juice-Filled Gummy Sharks",
+     "image": "https://i.pinimg.com/736x/89/63/cc/8963cc3347cea9e5943797e54225ac54.jpg",
+     "alt": "gummy shark juice",
+     "price": 10.99,
+     "instock": true
+    },
+ 
+    {"name": "Extra Blue Gummy Shark",
+     "image": "https://m.media-amazon.com/images/I/71H0Zj9BVWL._SL1500_.jpg",
+     "alt": "blue gummy shark",
+     "price": 8.99,
+     "instock": true
+    },
+
+    {"name": "Gummy Shark Cupcake",
+     "image": "https://www.ohmy-creative.com/wp-content/uploads/2023/07/SHARK-CUPCAKES-3.png",
+     "alt": "gummy shark cupcake",
+     "price": 9.99,
+     "instock": true
+    },
+
+   {"name": "Gummy Shark Popcorn",
+     "image": "https://i.pinimg.com/736x/8e/50/06/8e500618286ac23b8459d25e808f7bee.jpg",
+     "alt": "gummy shark popcorn",
      "price": 12.99,
+     "instock": true
+    },
+
+    {"name": "Gummy Shark Cookie",
+     "image": "https://i.pinimg.com/236x/c0/cb/99/c0cb99a487043d7d545a843c0df0dc79.jpg",
+     "alt": "gummy shark cookie",
+     "price": 8.99,
+     "instock": true
+    },
+
+   {"name": "Gummy Shark Icecream",
+     "image": "https://www.anightowlblog.com/wp-content/uploads/2016/06/Shark-Frenzy-Ice-Cream-3.jpg",
+     "alt": "gummy shark icecream",
+     "price": 9.99,
+     "instock": true
+    },
+
+    {"name": "Gummy Shark Drink",
+     "image": "https://i.pinimg.com/originals/72/ab/91/72ab91e8b1393b6c251ba0ff1960515e.jpg",
+     "alt": "gummy shark drink",
+     "price": 8.99,
+     "instock": true
+    },
+
+    {"name": "Watermelon Gummy Sharks",
+     "image": "https://www.hancocks.co.uk/_next/image?url=https:%2F%2Fapi.hancocks.co.uk%2Fmedia%2Fcatalog%2Fproduct%2F3%2F1%2F316543_ravazzi_sour_watermelon_sharks_a.jpg&w=3840&q=75",
+     "alt": "gummy shark melon",
+     "price": 12.99,
+     "instock": true
+    },
+
+    {"name": "Melted? Gummy Sharks",
+     "image": "https://cdn11.bigcommerce.com/s-riqk6cih6h/images/stencil/1280x1280/products/215/1410/50193_1__29479.1668014904.png?c=1",
+     "alt": "gummy shark melt",
+     "price": 8.99,
+     "instock": true
+    },
+
+    {"name": "Giant Gummy Sharks",
+     "image": "https://i5.walmartimages.com/seo/Giant-Gummy-Shark-18-oz_79ef1b3b-b6f8-4a9c-a424-f6657b63a060.109d21d54c273479f45a3785f6b58f90.jpeg",
+     "alt": "giant gm",
+     "price": 18.99,
      "instock": true
     },
 
@@ -34,114 +126,20 @@ const items = [
      "instock": true
     },
 
-    {"name": "Giant Gummy Sharks",
-     "image": "https://i5.walmartimages.com/seo/Giant-Gummy-Shark-18-oz_79ef1b3b-b6f8-4a9c-a424-f6657b63a060.109d21d54c273479f45a3785f6b58f90.jpeg",
-     "alt": "giant gm",
-     "price": 18.99,
-     "instock": true
-    },
-
-    {"name": "Melted? Gummy Sharks",
-     "image": "https://cdn11.bigcommerce.com/s-riqk6cih6h/images/stencil/1280x1280/products/215/1410/50193_1__29479.1668014904.png?c=1",
-     "alt": "gummy shark melt",
-     "price": 8.99,
-     "instock": true
-    },
-
-    {"name": "Watermelon Gummy Sharks",
-     "image": "https://www.hancocks.co.uk/_next/image?url=https:%2F%2Fapi.hancocks.co.uk%2Fmedia%2Fcatalog%2Fproduct%2F3%2F1%2F316543_ravazzi_sour_watermelon_sharks_a.jpg&w=3840&q=75",
-     "alt": "gummy shark melon",
+    {"name": "Assorted Gummy Sharks",
+     "image": "https://th.bing.com/th/id/OPHS.2OrKdVuWzRJ4Dg474C474?w=592&h=550&o=5&pid=21.1",
+     "alt": "assorted gm",
      "price": 12.99,
      "instock": true
     },
 
-    {"name": "Gummy Shark Drink",
-     "image": "https://i.pinimg.com/originals/72/ab/91/72ab91e8b1393b6c251ba0ff1960515e.jpg",
-     "alt": "gummy shark drink",
-     "price": 8.99,
-     "instock": true
-    },
-
-    {"name": "Gummy Shark Icecream",
-     "image": "https://www.anightowlblog.com/wp-content/uploads/2016/06/Shark-Frenzy-Ice-Cream-3.jpg",
-     "alt": "gummy shark icecream",
-     "price": 9.99,
-     "instock": true
-    },
-
-    {"name": "Gummy Shark Cookie",
-     "image": "https://i.pinimg.com/236x/c0/cb/99/c0cb99a487043d7d545a843c0df0dc79.jpg",
-     "alt": "gummy shark cookie",
-     "price": 8.99,
-     "instock": true
-    },
-
-       
-    {"name": "Gummy Shark Popcorn",
-     "image": "https://i.pinimg.com/736x/8e/50/06/8e500618286ac23b8459d25e808f7bee.jpg",
-     "alt": "gummy shark popcorn",
-     "price": 12.99,
-     "instock": true
-    },
-
-       
-    {"name": "Gummy Shark Cupcake",
-     "image": "https://www.ohmy-creative.com/wp-content/uploads/2023/07/SHARK-CUPCAKES-3.png",
-     "alt": "gummy shark cupcake",
-     "price": 9.99,
-     "instock": true
-    },
-
-       
-    {"name": "Extra Blue Gummy Shark",
-     "image": "https://m.media-amazon.com/images/I/71H0Zj9BVWL._SL1500_.jpg",
-     "alt": "blue gummy shark",
-     "price": 8.99,
-     "instock": true
-    },
-
-       
-    {"name": "Juice-Filled Gummy Sharks",
-     "image": "https://i.pinimg.com/736x/89/63/cc/8963cc3347cea9e5943797e54225ac54.jpg",
-     "alt": "gummy shark juice",
+    {"name": "Gummy Sharks",
+     "image":"https://theheadnut.com/cdn/shop/products/gummi_sharks.gif?v=1533923761images/gummyshark.png",
+     "alt": "gummy shark",
      "price": 10.99,
-     "instock": true
-    },
-
-    {"name": "Life Guard Ring Gummy",
-     "image": "https://marketingresources.albaneseconfectionery.com/wp-content/uploads/2021/05/50135_1-1250x1250.png",
-     "alt": "life guard ring",
-     "price": 10.99,
-     "instock": true
-    },
-
-    {"name": "Gummy Frog",
-     "image": "https://i.etsystatic.com/20314700/r/il/ea189b/5410146293/il_1080xN.5410146293_l25u.jpg",
-     "alt": "Gummy Frog",
-     "price": 7.99,
-     "instock": true
-    },
-
-    {"name": "Mini Gummy Sharks",
-     "image": "https://cdnimg.webstaurantstore.com/images/products/large/611302/2190204.jpg",
-     "alt": "Mini Gummy Sharks ",
-     "price": 6.99,
-     "instock": true
-    },
-
-    {"name": "Marshmellow Gummy Shark",
-     "image": "https://m.media-amazon.com/images/I/61+Y+CnemoL._SL1280_.jpg",
-     "alt": "Gummy Shark Marsh",
-     "price": 8.99,
-     "instock": true
-    },
-
-    {"name": "Sour Assorted Gummy Sharks",
-     "image": "https://sweetzandmore.com/cdn/shop/files/rn-image_picker_lib_temp_07c96c72-9e7e-44fa-823a-353973a7999b.jpg?crop=center&height=1200&v=1743362603&width=1200",
-     "alt": "Sour Assorted Gummy Sharks ",
-     "price": 9.99,
      "instock": true
     }
+ 
 ];
 
 function inject(item) {
@@ -157,7 +155,6 @@ container.insertAdjacentHTML('afterbegin', html);
 
 }
 
-inject(items[0])
 items.forEach((item) => inject(item))
 
 function addToCart() {
@@ -165,9 +162,11 @@ function addToCart() {
   //create array if we need more than forEach
   const btnArray = Array.from(buttons);
   btnArray.forEach((btn) => btn.addEventListener("click", function (event) {
-    comsole.log(event.target.textContent);
-    console.log(event.target.closest("display-card"));
-  
+    comsole.log(
+      event.target.closest(".display-card").getAttribute("data-title"),
+      event.target.textContent
+    );
+
   }))
 
   console.log(buttons);
@@ -176,3 +175,14 @@ function addToCart() {
   //take that object and push into cart
 }
 addToCart();
+
+function injecttocart() {
+const card = document.querySelector(".cart_items"); 
+const html = `<div class ="cart_items">
+  <h2 class="card__heading">${item.name}</h2>
+  <h3> $${item.price}</h3>
+  <button class="buy">BUY</button>
+</div>`
+cart.insertAdjacentHTML('afterbegin', html);
+
+}
