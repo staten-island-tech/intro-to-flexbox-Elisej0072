@@ -170,7 +170,6 @@ function addToCart() {
   }))
 
   console.log(buttons);
-
   //find the item in the array
   //take that object and push into cart
 }
@@ -184,5 +183,7 @@ const html = `<div class ="cart_items">
   <button class="buy">BUY</button>
 </div>`
 cart.insertAdjacentHTML('afterbegin', html);
-
 }
+
+
+
