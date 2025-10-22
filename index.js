@@ -149,7 +149,7 @@ const container = document.querySelector(".container");
 const html = `<div class ="card">
   <h2 class="card__heading">${item.name}</h2><img src="${item.image}">
   <h3> $${item.price} </h3>
-  <button class="buy">BUY</button>
+  <button class="buy" data-title="${item.name}">BUY</button>
 </div>`
 container.insertAdjacentHTML('afterbegin', html);
 
@@ -162,11 +162,8 @@ function addToCart() {
   //create array if we need more than forEach
   const btnArray = Array.from(buttons);
   btnArray.forEach((btn) => btn.addEventListener("click", function (event) {
-    comsole.log(
-      event.target.closest(".display-card").getAttribute("data-title"),
-      event.target.textContent
-    );
-
+  
+    injecttocart();
   }))
 
   console.log(buttons);
@@ -175,7 +172,7 @@ function addToCart() {
 }
 addToCart();
 
-function injecttocart() {
+function injecttocart(item) {
 const card = document.querySelector(".cart_items"); 
 const html = `<div class ="cart_items">
   <h2 class="card__heading">${item.name}</h2>
@@ -184,6 +181,5 @@ const html = `<div class ="cart_items">
 </div>`
 cart.insertAdjacentHTML('afterbegin', html);
 }
-
 
 
