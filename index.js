@@ -152,7 +152,6 @@ const html = `<div class ="card">
   <button class="buy" data-title="${item.name}">BUY</button>
 </div>`
 container.insertAdjacentHTML('afterbegin', html);
-
 }
 
 items.forEach((item) => inject(item))
@@ -161,8 +160,7 @@ function addToCart() {
   const buttons = document.querySelectorAll("button");
   //create array if we need more than forEach
   const btnArray = Array.from(buttons);
-  btnArray.forEach((btn) => btn.addEventListener("click", function (event) {
-  
+  btnArray.forEach((btn) => btn.addEventListener("click", function(event) {
     injecttocart();
   }))
 
@@ -174,12 +172,34 @@ addToCart();
 
 function injecttocart(item) {
 const card = document.querySelector(".cart_items"); 
+btnArray.forEach((btn) => btn.addEventListener("click", function(event) {
+  const title = event.target.dataset.name;
+  const item = items.find(item => item.name === name);
+  injecttocart(item);
+  checkCart(item);
+}));
+
 const html = `<div class ="cart_items">
   <h2 class="card__heading">${item.name}</h2>
   <h3> $${item.price}</h3>
   <button class="buy">BUY</button>
 </div>`
-cart.insertAdjacentHTML('afterbegin', html);
+cart.insertAdjacentHTML.cart('afterbegin', html);
 }
+
+const cart = []
+function CreateCartObject(item){
+  const cartItem ={ ...item, quantity: 1};
+}
+function checkCart(item){
+  const found = cart.find((cartItem)=> cartItem.name === item.name);
+  if(found){
+    found.quantity += 1;
+  } else{
+    cart.push(item);
+  }
+}
+checkCart(item);
+console.log(cart);
 
 
