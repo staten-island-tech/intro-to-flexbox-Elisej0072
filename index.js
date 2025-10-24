@@ -105,7 +105,7 @@ const items = [
      "instock": true
     },
 
-    {"name": "Mustelus antarcticus",
+    {"name": "Real Gummy Shark",
      "image": "https://media.australian.museum/media/dd/images/mantarcjuvant_big.b8f0cd4.width-1200.46004b0.jpg",
      "alt": "gummy shark real",
      "price": 500.99,
@@ -173,7 +173,7 @@ addToCart();
 function injecttocart(item) {
 const card = document.querySelector(".cart_items"); 
 btnArray.forEach((btn) => btn.addEventListener("click", function(event) {
-  const title = event.target.dataset.name;
+  const title = event.target.dataset.title;
   const item = items.find(item => item.name === name);
   injecttocart(item);
   checkCart(item);
@@ -186,20 +186,5 @@ const html = `<div class ="cart_items">
 </div>`
 cart.insertAdjacentHTML.cart('afterbegin', html);
 }
-
-const cart = []
-function CreateCartObject(item){
-  const cartItem ={ ...item, quantity: 1};
-}
-function checkCart(item){
-  const found = cart.find((cartItem)=> cartItem.name === item.name);
-  if(found){
-    found.quantity += 1;
-  } else{
-    cart.push(item);
-  }
-}
-checkCart(item);
-console.log(cart);
 
 

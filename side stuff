@@ -1,0 +1,16 @@
+/*
+const cart = []
+function CreateCartObject(item){
+  const cartItem ={ ...item, quantity: 1};
+}
+function checkCart(item){
+  const found = cart.find((cartItem)=> cartItem.name === item.name);
+  if(found){
+    found.quantity += 1;
+  } else{
+    cart.push(item);
+  }
+}
+checkCart(item);
+console.log(cart);
+*/
