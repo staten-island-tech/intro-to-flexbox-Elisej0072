@@ -141,12 +141,12 @@ const items = [
     }
  
 ];
-
+const cart= []
 function inject(item) {
 const container = document.querySelector(".container"); 
 /* query the container using adjacent html push card into container */
 
-const html = `<div class ="card">
+const html = `<div class ="card" data-title= "${item.name}" >
   <h2 class="card__heading">${item.name}</h2><img src="${item.image}">
   <h3> $${item.price} </h3>
   <button class="buy" data-title="${item.name}">BUY</button>
@@ -161,30 +161,36 @@ function addToCart() {
   //create array if we need more than forEach
   const btnArray = Array.from(buttons);
   btnArray.forEach((btn) => btn.addEventListener("click", function(event) {
-    injecttocart();
+    const product = event.target.closest(".card").getAttribute("data-title")
+   const purchased=  items.find((item) => item.name === product)
+   console.log(purchased)
+    injecttocart(purchased,btnArray);
   }))
 
-  console.log(buttons);
   //find the item in the array
   //take that object and push into cart
 }
 addToCart();
 
-function injecttocart(item) {
-const card = document.querySelector(".cart_items"); 
+function injecttocart(item,btnArray) {
+const cartItems = document.querySelector(".cart_items"); 
 btnArray.forEach((btn) => btn.addEventListener("click", function(event) {
   const title = event.target.dataset.title;
   const item = items.find(item => item.name === name);
-  injecttocart(item);
-  checkCart(item);
 }));
+
+/*
+let cartTotal= 0;
+cart.ForEach((item) => (cartTotal + item));
+console.log(cartTotal);
+*/
 
 const html = `<div class ="cart_items">
   <h2 class="card__heading">${item.name}</h2>
   <h3> $${item.price}</h3>
   <button class="buy">BUY</button>
 </div>`
-cart.insertAdjacentHTML.cart('afterbegin', html);
+cartItems.insertAdjacentHTML('afterbegin', html);
 }
 
 
