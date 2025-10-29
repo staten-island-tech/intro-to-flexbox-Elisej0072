@@ -178,18 +178,22 @@ btnArray.forEach((btn) => btn.addEventListener("click", function(event) {
   const title = event.target.dataset.title;
   const item = items.find(item => item.name === name);
 }));
-
-/*
-let cartTotal= 0;
-cart.ForEach((item) => (cartTotal + item));
-console.log(cartTotal);
-*/
-
 const html = `<div class ="cart_items">
   <h2 class="card__heading">${item.name}</h2>
   <h3> $${item.price}</h3>
 </div>`
 cartItems.insertAdjacentHTML('afterbegin', html);
 }
+
+function filteritems () {
+const filter = document.querySelector(".filter")
+.filter((item) => item.price <10)
+forEach((item) => console.log(item.name));  
+}
+
+
+
+
+
 
 
