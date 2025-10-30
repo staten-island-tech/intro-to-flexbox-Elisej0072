@@ -139,8 +139,9 @@ const items = [
      "price": 10.99,
      "instock": true
     }
- 
 ];
+
+
 const cart= []
 function inject(item) {
 const container = document.querySelector(".container"); 
@@ -162,7 +163,7 @@ function addToCart() {
   const btnArray = Array.from(buttons);
   btnArray.forEach((btn) => btn.addEventListener("click", function(event) {
     const product = event.target.closest(".card").getAttribute("data-title")
-   const purchased=  items.find((item) => item.name === product)
+    const purchased= items.find((item) => item.name === product)
    console.log(purchased)
     injecttocart(purchased,btnArray);
   }))
@@ -185,11 +186,24 @@ const html = `<div class ="cart_items">
 cartItems.insertAdjacentHTML('afterbegin', html);
 }
 
-function filteritems () {
-const filter = document.querySelector(".filter")
-.filter((item) => item.price <10)
-forEach((item) => console.log(item.name));  
+function filterItems(name) {
+  const display = document.querySelector(".filter");
+  display.innerHTML = "";
+  const items = document.querySelectorAll(".items");
+  
+  const filterItems = items.filter((item) => item.name === name);
+  filterItems.forEach((item) => 
+    display.insertAdjacentHTML(
+      "afterbegin",
+      `<div class="item-card" ">
+       <h3>${item.name}</h3>
+       <p>name: ${item.name}</p>
+      </div>`
+    )
+  );
 }
+
+filterItems('Gummy Frog');
 
 
 
