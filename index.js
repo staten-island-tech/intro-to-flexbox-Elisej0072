@@ -188,22 +188,27 @@ cartItems.insertAdjacentHTML('afterbegin', html);
 
 function filterItems(name) {
   const display = document.querySelector(".filter");
-  display.innerHTML = "";
   const items = document.querySelectorAll(".items");
-  
+  display.innerHTML = ""; 
   const filterItems = items.filter((item) => item.name === name);
   filterItems.forEach((item) => 
-    display.insertAdjacentHTML(
+  display.insertAdjacentHTML(
       "afterbegin",
       `<div class="item-card" ">
        <h3>${item.name}</h3>
-       <p>name: ${item.name}</p>
+       <p>name:${item.name}</p>
       </div>`
     )
   );
 }
 
 filterItems('Gummy Frog');
+
+const safeItems = Array.isArray(items) ? items : [];
+const filtered = safeItems.filter(item => item.active);
+
+
+
 
 
 
