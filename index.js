@@ -190,6 +190,7 @@ function filterItems(name) {
   const display = document.querySelector(".filter");
   const items = document.querySelectorAll(".items");
   display.innerHTML = ""; 
+
   const filterItems = items.filter((item) => item.name === name);
   filterItems.forEach((item) => 
   display.insertAdjacentHTML(
@@ -203,16 +204,3 @@ function filterItems(name) {
 }
 
 filterItems('Gummy Frog');
-
-const safeItems = Array.isArray(items) ? items : [];
-const filtered = safeItems.filter(item => item.active);
-
-
-
-
-
-
-
-
-
-
