@@ -212,6 +212,22 @@ function filterItems(price) {
   );
 }
 
+function filterItems(price) {
+  const display = document.querySelector(".filter");
+  display.innerHTML = ""; 
+  const filterItems = items.filter((item) => item.price === price);
+  console.log(filterItems)
+  filterItems.forEach((item) => 
+  display.insertAdjacentHTML(
+      "afterbegin",
+      `<div class="item-card" ">
+       <h3>${item.price}</h3>
+       <p>price:${item.price}</p>
+      </div>`
+    )
+  );
+}
+
 function filterItems(instock) {
   const display = document.querySelector(".filter");
   display.innerHTML = ""; 
@@ -228,11 +244,7 @@ function filterItems(instock) {
   );
 }
 
-filterItems(false);
-
- /*
-document.querySelector(".gummy").addEventListener("click", function(event){}); {
+filterItems('Gummy Frog');
+document.querySelector(".gummy").addEventListener("click", function(event) {
     const product = event.target.closest(".card").getAttribute("data-title");
     const purchased= items.find((item) => item.price === product);}
-
- */
