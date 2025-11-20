@@ -194,7 +194,7 @@ function filterItems(name) {
  
 }
 
-filterItems('Gummy Frog');
+
 //document.querySelector(".gummy").addEventListener("click", function())
 function filterItems(price) {
   const display = document.querySelector(".filter");
