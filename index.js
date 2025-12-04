@@ -164,7 +164,7 @@ function addToCart() {
   btnArray.forEach((btn) => btn.addEventListener("click", function(event) {
     const product = event.target.closest(".card").getAttribute("data-title")
     const purchased= items.find((item) => item.name === product)
-   console.log(purchased)
+    console.log(purchased)
     injecttocart(purchased,btnArray);
   }))
 
