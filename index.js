@@ -157,6 +157,12 @@ container.insertAdjacentHTML('afterbegin', html);
 
 items.forEach((item) => inject(item))
 
+
+
+
+
+
+
 function addToCart() {
   const buttons = document.querySelectorAll("button");
   //create array if we need more than forEach
@@ -185,6 +191,17 @@ const html = `<div class ="cart_items">
 </div>`
 cartItems.insertAdjacentHTML('afterbegin', html);
 }
+
+
+
+
+
+
+
+
+
+
+
 
 function filterItems(name) {
   const display = document.querySelector(".filter");
