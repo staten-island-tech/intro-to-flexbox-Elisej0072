@@ -162,7 +162,6 @@ items.forEach((item) => inject(item))
 
 
 
-
 function addToCart() {
   const buttons = document.querySelectorAll("button");
   //create array if we need more than forEach
