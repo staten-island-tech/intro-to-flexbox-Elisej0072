@@ -146,7 +146,6 @@ const cart= []
 function inject(item) {
 const container = document.querySelector(".container"); 
 /* query the container using adjacent html push card into container */
-
 const html = `<div class ="card" data-title= "${item.name}" >
   <h2 class="card__heading">${item.name}</h2><img src="${item.image}">
   <h3> $${item.price} </h3>
@@ -154,12 +153,7 @@ const html = `<div class ="card" data-title= "${item.name}" >
 </div>`
 container.insertAdjacentHTML('afterbegin', html);
 }
-
 items.forEach((item) => inject(item))
-
-
-
-
 
 
 function addToCart() {
